@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+.main_div {
+  margin: auto;
+  width: 100%;
+  background-color: #253859;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.center_div {
+  width: 80%;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin: 8px;
+}
+
+h1 {
+  color: black;
+  background: transparent;
+  background-color: #ddf00c;
+  padding: 6px 0 2ox 0;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15 px -5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid #a8a0b1;
+  outline: none;
+}
+
+.Add {
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background-color: green;
+}
+ol {
+  margin-top: 30px;
+  /* margin-right: 50px; */
+}
+
+ol li {
+  padding-left: 0px;
+  /* padding: 3px 0; */
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+  /* border-bottom: 1px solid gray; */
+}
+
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.todo_style li {
+  color: black;
+}
+
+.todo_style .fa-times {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 10px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.todo_style .fa-times:hover {
+  background-color: red;
+}
+
+.todo_style .fa-times:hover .list_style {
+  color: crimson;
+}
+.clearButton {
+  position: relative;
+  bottom: 5px;
+  left: 65px;
+  background-color: purple;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 4px;
+}
+.RemoveData {
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.RemoveData:hover {
+  background-color: red;
+}
+/* media query start */
+@media (max-width: 768px) {
+  /* .main_div{
+    width: 70%;
+  }
+  .center_div {
+    width: 60%;
+  } */
+  .center_div h1 {
+    font-size: 18px;
+  }
+  .center_div ::placeholder {
+    font-size: 16px;
+  }
+
+  .todo_style .fa-times {
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Add {
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+  }
+  .todo_style li {
+    font-size: 16px;
+  }
+  .RemoveData {
+    padding: 5px;
+    font-size: 18px;
+  }
+}
